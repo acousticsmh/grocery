@@ -1,4 +1,5 @@
-#include<bits/stdc++.h>
+#include<string>
+#include<iostream>
 using namespace std;
 
 int x = 0;
@@ -8,12 +9,16 @@ class Item
 {
     public:
         string name;
-        int myid;
+        int id;
+        int c_id;
+        int size;
 
-        Item(string Name)
+        Item(string Name, int cid, int s = 1)
         {
-            myid = x++;
+            c_id = cid;
+            id = x++;
             name = Name;
+            size = s;
         }
 
 };
